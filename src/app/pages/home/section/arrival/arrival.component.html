@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <!-- slider product -->
+        <div class="cs-hidden">
+            <div class="item-a">
+                <div class="row">
+                    <div *ngFor="let product of products" class="col-lg-3 col-12 pl-2 mt-5">
+                        <div class="slide-img">
+                            <img alt="arrival" src="{{product.image}}">
+                            <div class="overlay">
+                                <a class="btn" [routerLink]="['/productdetail/' , product.id]">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <div class="row">
+                                    <p class="title">{{product.title}}</p>
+                                </div>
+                                <div class="row">
+                                    <p class="price">RM {{product.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

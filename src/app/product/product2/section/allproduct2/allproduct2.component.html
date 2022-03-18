@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-12 mt-5">
+            <p>6 / 6 products</p>
+        </div>
+        <div class="col-md-9 col-12 mt-5" align="right">
+            <select name="sell" id="sell">
+                <option value="0">Best Selling</option>
+                <option value="1">Alphabetically, A-Z</option>
+                <option value="2">Alphabetically, Z-A</option>
+                <option value="3">Price, low to high</option>
+                <option value="4">Price, high to low</option>
+                <option value="5">Date, new to old</option>
+                <option value="6">Date, old to new</option>
+            </select>
+        </div>
+    </div>
+    <!-- API Women's Clothing -->
+    <div class="row">
+        <!-- <div *ngFor="let women of womens" class="col-lg-3 col-12 pl-2 mt-5">
+            <div>
+                <div class="image" style="width:100%">
+                    <a routerLink="/checkout">
+                        <img src="{{women.image}}" class="card-img-top" alt="jewelery">
+                        <div class="overlay-image mb-4">
+                            <a routerLink="/checkout" class="btn">ADD TO CART</a>
+                        </div>
+                    </a>
+                    <p class="mb-2 pr-5">{{women.title}}</p>
+                    <h1 class="mb-2 pr-5">RM {{women.price}}</h1>
+                </div>
+            </div>
+        </div> -->
+        <div class="cs-hidden">
+            <div class="item-a">
+                <div class="row">
+                    <div *ngFor="let women of womens" class="col-lg-3 col-12 pl-2 mt-5">
+                        <div class="slide-img">
+                            <img alt="arrival" src="{{women.image}}">
+                            <div class="overlay">
+                                <a class="btn" [routerLink]="['/productdetail/' , women.id]">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <div class="row">
+                                    <p class="title">{{women.title}}</p>
+                                </div>
+                                <div class="row">
+                                    <p class="price">RM {{women.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination mb-5">
+        <a class="pr-5" routerLink="/allproduct2">&lt;</a>
+        <a class="pr-5" routerLink="/allproduct2" class="active">1</a>
+        <a class="pr-5" routerLink="/allproduct2">2</a>
+        <a class="pr-5" routerLink="/allproduct2">3</a>
+        <a class="pr-5" routerLink="/allproduct2">&gt;</a>
+    </div>
+
+</div>

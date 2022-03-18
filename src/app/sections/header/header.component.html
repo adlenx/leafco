@@ -1,0 +1,49 @@
+<!-- <nav class="navbar navbar-expand-sm bg-default" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'"> -->
+<div class="sticky-nav-wrapper">
+  <nav class="sticky-nav" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+    <div class="container">
+      <div class="row">
+        <div class="navbar col-lg-5 col-12">
+          <a class="navbar-item">
+            <img src="assets/images/logo.png">
+          </a>
+        </div>
+
+        <div class="navbar col-lg-6 col-12 text-center">
+          <ul class="nav">
+            <li class="scroll-to-section mr-5"><a href="#top" class="active">HOME</a></li>
+            <li class="d-inline-block mr-5"><a routerLink="/collections">COLLECTION</a></li>
+            <li class="d-inline-block mr-5"><a routerLink="/about">ABOUT US</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar col-lg-1 col-12" justify="right">
+          <a routerLink="/checkout" class="fa fa-search"></a>
+          <a routerLink="/checkout" class="far fa-user"></a>
+          <a routerLink="/bagdetails" class="fa fa-shopping-bag"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- </nav> -->
+
+
+
+<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark" (scroll)="onscroll()"
+  [ngClass]="navbarfixed?'fixed':'nofixed'">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+  </ul>
+</nav> -->

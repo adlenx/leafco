@@ -1,0 +1,186 @@
+:host {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+ }
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+ }
+
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+ }
+
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+ }
+
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+ }
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+ }
+  
+.container {
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+ }
+  
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+ }
+  
+label {
+    margin-bottom: 10px;
+    display: block;
+ }
+  
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+ }
+  
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    width: 260px;
+    height: 64px;
+    cursor: pointer;
+ }
+  
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #333333;
+ }
+  
+/* span.price {
+    float: right;
+    color: grey;
+ } */
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+h2 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    font-size: 24px;
+    color: #666666;
+ }
+
+p {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    color: #707070;
+ }
+
+label {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    color: #707070;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+ }
+
+.custom-control-label {
+    font-family: 'Lato', sans-serif; 
+    color: #707070;
+    font-size: 16px;
+    letter-spacing: 2.4px;
+ }
+
+.checkbox {
+    width: 40px;
+    height: 40px;
+ }
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    color: #4A95C7;
+    text-decoration: none;
+    display: inline-block;
+ }
+
+input {
+    height: 64px;
+ }
+
+.subtotal {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    color: #707070;
+    font-size: 14px;
+ }
+
+.subtotalp {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    color: #707070;
+    font-size: 14px;
+    text-align: right;
+ }
+
+.total {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    color: #707070;
+    font-size: 14px;
+ }
+
+.totalp {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    color: #707070;
+    font-size: 18px;
+    text-align: right;
+ }
+
+.product {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    color: #707070;
+    font-size: 16px;
+    text-align: left;
+ }
+
+.quantity {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    color: #707070;
+    font-size: 12px;
+    text-align: left;
+ }

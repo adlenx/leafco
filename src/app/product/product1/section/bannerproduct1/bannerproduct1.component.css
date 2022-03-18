@@ -1,0 +1,51 @@
+:host {
+    background-color: #FFFCF7;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    }
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    letter-spacing: 12.2px;
+    padding-top: 200px;
+    color: #A4CAC9;
+}
+
+/* img {
+    width:100;
+    height: 686px;
+}
+
+.col-md-6 {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.hero-image {
+    background-image: url("src/assets/images/products-1.png");
+    height: 686px;
+    width: 686px;
+    left: 45.5%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.hero-text {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(-80%, -80%);
+    color: white;
+  }

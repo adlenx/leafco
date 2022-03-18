@@ -1,0 +1,139 @@
+:host {
+    background-color: #FFFCF7;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    }
+
+/* div {
+    padding: 10px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #A4CAC9;
+    font-size: 40px;
+    font-weight: 700;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color: #666666;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color: #666666;
+}
+
+p {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+}
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+}
+  
+
+.outer {
+    border-left: 3px solid #FBD3D5;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FBD3D5;
+} */
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #A4CAC9;
+    font-size: 40px;
+    font-weight: 700;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color: #666666;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color: #666666;
+}
+
+p {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+}
+
+a {
+  color: #50bced;
+}
+.activity-feed {
+  padding: 15px;
+  list-style: none;
+}
+.activity-feed .feed-item {
+  position: relative;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 3px solid #FBD3D5;
+}
+.activity-feed .feed-item:last-child {
+  border-color: transparent;
+}
+.activity-feed .feed-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+    left: -13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FBD3D5;
+}
+.activity-feed .feed-item .date {
+  display: block;
+  position: relative;
+  top: -5px;
+  color: #8c96a3;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.activity-feed .feed-item .text {
+  position: relative;
+  padding-left: 30px;
+  top: -20px;
+}

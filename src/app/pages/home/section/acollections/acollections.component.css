@@ -1,0 +1,65 @@
+:host {
+    background-color: #FFFCF7;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    }
+
+div {
+    padding: 10px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #A4CAC9;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+}
+  
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: brightness(85%);
+}
+
+.firsttext {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+}
+
+.secondtext {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+}
+
+.thirdtext {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+}
+
+.forthtext {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+}

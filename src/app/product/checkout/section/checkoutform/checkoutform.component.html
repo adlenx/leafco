@@ -1,0 +1,126 @@
+<main class="mt-5 pt-4">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2 class="title">Leaf Co</h2>
+                <p class="flow mt-3">Cart > Information > Shipping > Payment</p>
+                <!--email-->
+                <div class="md-form mb-5 mt-3">
+                    <label for="email" class="">Contact Information</label>
+                    <input type="text" id="email" class="form-control" placeholder="leafco@example.com">
+                </div>
+                <!--shipping address full-->
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <label for="saddress" class=""> Shipping Address</label>
+                        <input type="text" id="saddress" class="form-control" placeholder="Country">
+                    </div>
+                </div>
+                <!-- name -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <!--address-->
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <input type="text" id="address" class="form-control" placeholder="Address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <input type="text" id="postcode" class="form-control" placeholder="Postcode">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" id="city" class="form-control" placeholder="City">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <select class="custom-select w-100 h-50" id="state" required>
+                            <option value="">State/Territory</option>
+                            <option>California</option>
+                            <option>Malaysia</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                </div>
+                <!-- save information tick box -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="custom-control custom-checkbox mt-0">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <label class="custom-control-label d-inline-block mt-3" for="save-info">
+                            Save this information for next time</label>
+                    </div>
+                </div>
+                <!-- purchase now button -->
+                <div class="row">
+                    <div class="col-3 col-6">
+                        <button class="btn" type="submit" a routerLink="/purchasenow">PURCHASE NOW</button>
+                    </div>
+                    <div class="cart col-3 col-6 mt-4">
+                        <a routerLink="/collections">RETURN TO CART</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cart summary -->
+            <div class="col-md-6 col-12">
+                <!-- picture and product -->
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card" style="width: 5rem;">
+                            <img src="{{item1.image}}" class="card-img-top" alt="productcart">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p class="product">{{item1.title}}</p>
+                        <p class="quantity">QTY-1</p>
+                        <p class="price">RM {{item1.price}}</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- gift code -->
+                <div class="row">
+                    <div class="col-3 col-6 mt-2">
+                        <input type="text" id="giftcode" class="form-control" placeholder="Gift Code">
+                    </div>
+                    <div class="col-3 col-6 mt-2">
+                        <button class="btn" type="submit">APPLY</button>
+                    </div>
+                </div>
+                <!-- subtotal -->
+                <hr>
+                <div class="row">
+                    <div class="col-3 col-6 mt-2">
+                        <p class="subtotal">Subtotal</p>
+                        <p class="subtotal">Shipping</p>
+                    </div>
+                    <div class="col-3 col-6 mt-2">
+                        <p class="subtotalp">RM {{item1.price}}</p>
+                        <p class="subtotalp">RM 0.00</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- total -->
+                <div class="row">
+                    <div class="col-3 col-6 mt-2">
+                        <p class="total">Total</p>
+                    </div>
+                    <div class="col-3 col-6 mt-2">
+                        <p class="totalp">RM {{item1.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

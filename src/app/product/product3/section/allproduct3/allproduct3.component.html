@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-12 mt-5">
+            <p>4 / 4 products</p>
+        </div>
+        <div class="col-md-9 col-12 mt-5" align="right">
+            <select name="sell" id="sell">
+                <option value="0">Best Selling</option>
+                <option value="1">Alphabetically, A-Z</option>
+                <option value="2">Alphabetically, Z-A</option>
+                <option value="3">Price, low to high</option>
+                <option value="4">Price, high to low</option>
+                <option value="5">Date, new to old</option>
+                <option value="6">Date, old to new</option>
+            </select>
+        </div>
+    </div>
+    <!-- API Jewelery -->
+    <div class="row">
+        <div class="cs-hidden">
+            <div class="item-a">
+                <div class="row">
+                    <div *ngFor="let jewelery of jewelerys" class="col-lg-3 col-12 pl-2 mt-5">
+                        <div class="slide-img">
+                            <img alt="arrival" src="{{jewelery.image}}">
+                            <div class="overlay">
+                                <a class="btn" [routerLink]="['/productdetail/' , jewelery.id]">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <div class="row">
+                                    <p class="title">{{jewelery.title}}</p>
+                                </div>
+                                <div class="row">
+                                    <p class="price">RM {{jewelery.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination mb-5">
+        <a class="pr-5" routerLink="/allproduct3">&lt;</a>
+        <a class="pr-5" routerLink="/allproduct3" class="active">1</a>
+        <a class="pr-5" routerLink="/allproduct3">2</a>
+        <a class="pr-5" routerLink="/allproduct3">3</a>
+        <a class="pr-5" routerLink="/allproduct3">&gt;</a>
+    </div>
+
+</div>
