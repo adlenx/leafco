@@ -12,13 +12,13 @@
             <p class="quantity mt-5">Quantity</p>
             <div class="row mb-1">
                 <div class="col-1">
-                    <span class="minus">-</span>
+                    <span class="minus" (click)="minus()">-</span>
                 </div>
                 <div class="col-1">
-                    <input type="text" value="1" />
+                    <input type="text" [value]="quantity">
                 </div>
                 <div class="col-1">
-                    <span class="plus">+</span>
+                    <span class="plus" (click)="plus()">+</span>
                 </div>
             </div>
             <button class="btn btn-danger mt-5" (click)="triggerModal(modalData)">ADD TO BAG</button>
@@ -53,7 +53,7 @@
                 <p class="titlep mb-0">{{item1.title}}</p>
                 <p class="pricep">RM {{item1.price}}</p>
                 <button class="btn" id="checkoutp" (click)="triggerModal(modalData2)"
-                    (click)="modal.dismiss('Cross click')">CHECKOUT</button>
+                    (click)="modal.close('Save click')">CHECKOUT</button>
                 <button class="btn mt-1" id="buttonp" (click)="modal.close('Save click')" a
                     routerLink="/collections">CONTINUE SHOPPING</button>
             </div>
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- <button class="btn" id="checkoutb" a routerLink="/checkout">CHECK OUT NOW</button> -->
-                    <a class="btn mt-3" id="button-b" (click)="modal.dismiss('Cross click')"
+                    <a class="btn mt-3" id="button-b" (click)="modal.close('Save click')"
                         [routerLink]="['/checkout/' , item1.id]">CHECK OUT NOW</a>
                 </div>
             </div>

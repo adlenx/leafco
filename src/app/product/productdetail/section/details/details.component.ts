@@ -15,6 +15,8 @@ export class DetailsComponent  implements OnInit {
   closeModal: any;
   id: any;
   products : any;
+  quantity : number =1;
+
 
   constructor(private http:GetAPIService, private modalService: NgbModal, private rout:ActivatedRoute) { } //activated rout for rout id path
 
@@ -45,6 +47,21 @@ export class DetailsComponent  implements OnInit {
     let resp= this.http.getApi();
     resp.subscribe((data)=>this.products=data);
     });
+  }
+
+  //quantity
+  i=1
+  plus() {
+    if(this.i !=10){
+      this.i++;
+      this.quantity=this.i;
+    }
+  }
+  minus() {
+    if(this.i !=1){
+      this.i--;
+      this.quantity=this.i;
+    }
   }
 
 
