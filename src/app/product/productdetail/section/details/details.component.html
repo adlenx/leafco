@@ -21,10 +21,14 @@
                     <span class="plus" (click)="plus()">+</span>
                 </div>
             </div>
-            <button class="btn btn-danger mt-5" (click)="triggerModal(modalData)">ADD TO BAG</button>
-            <!-- <button class="btn mt-3" id="button" a routerLink="/checkout">BUY IT NOW</button> -->
-            <a class="btn mt-3" id="button" [routerLink]="['/checkout/' , item1.id]">BUY IT NOW</a>
-            <p class="description mt-5">{{item1.description}}</p>
+            <div class="row">
+                <button class="btn btn-danger mt-5" (click)="triggerModal(modalData)">ADD TO BAG</button>
+                <!-- <button class="btn mt-3" id="button" a routerLink="/checkout">BUY IT NOW</button> -->
+            </div>
+            <div class="row">
+                <a class="btn mt-3" id="button" [routerLink]="['/checkout/' , item1.id]">BUY IT NOW</a>
+                <p class="description mt-5">{{item1.description}}</p>
+            </div>
         </div>
         <hr class="my-5">
         <div class="row">
