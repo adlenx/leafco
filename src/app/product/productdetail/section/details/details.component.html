@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-8 pl-5">
                     <p class="item-b mb-4">{{item1.title}}</p>
-                    <p class="quantity-b mb-0">QTY: 1 </p>
+                    <p class="quantity-b mb-0">QTY: {{quantity}}</p>
                     <p class="price-b">RM {{item1.price}}</p>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <p class="sub">SUBTOTAL</p>
                 </div>
                 <div class="col-6">
-                    <p class="sub-p" align="right">RM {{item1.price}} </p>
+                    <p class="sub-p" align="right">RM {{item1.price*quantity}}</p>
                 </div>
             </div>
             <div class="row">

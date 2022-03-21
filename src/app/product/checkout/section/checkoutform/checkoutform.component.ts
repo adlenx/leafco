@@ -11,6 +11,7 @@ export class CheckoutformComponent implements OnInit {
 
   item1 : any;
   id: any;
+  quantity : number =1;
 
   constructor(private http:GetAPIService, private rout:ActivatedRoute) { }
 
@@ -20,6 +21,20 @@ export class CheckoutformComponent implements OnInit {
     resp.subscribe((data)=>{this.item1=data;
     console.log(this.id);
     });
+  }
+
+  i=1
+  plus() {
+    if(this.i !=10){
+      this.i++;
+      this.quantity=this.i;
+    }
+  }
+  minus() {
+    if(this.i !=1){
+      this.i--;
+      this.quantity=this.i;
+    }
   }
 
 }

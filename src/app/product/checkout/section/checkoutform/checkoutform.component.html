@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-4">
                         <p class="product">{{item1.title}}</p>
-                        <p class="quantity">QTY-1</p>
+                        <p class="quantity">QTY: {{quantity}}</p>
                         <p class="price">RM {{item1.price}}</p>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                         <p class="subtotal">Shipping</p>
                     </div>
                     <div class="col-3 col-6 mt-2">
-                        <p class="subtotalp">RM {{item1.price}}</p>
+                        <p class="subtotalp">RM {{item1.price*quantity}}</p>
                         <p class="subtotalp">RM 0.00</p>
                     </div>
                 </div>
