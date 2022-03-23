@@ -184,3 +184,19 @@ input {
     font-size: 12px;
     text-align: left;
  }
+
+#state {
+    width: 100%;
+    height: 62px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #707070;
+}
+
+#country {
+    width: 100%;
+    height: 62px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #707070;
+}
