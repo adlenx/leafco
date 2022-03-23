@@ -6,9 +6,12 @@
         <div class="col-7">
             <p class="title">{{item1.title}}</p>
             <p class="price">RM {{item1.price}}</p>
-            <p class="priceinstallment">or <span>MYR 33.00</span> x 3 monthly instalments.<br>No interest or fees
+            <p class="priceinstallment">or
+                <span> MYR {{item1.price/2.0}} </span> x 2 monthly instalments.<br>No interest or
+                fees
                 with hoolah.
-                Learn more</p>
+                Learn more
+            </p>
             <p class="quantity mt-5">Quantity</p>
             <div class="row mb-1">
                 <div class="col-1">
@@ -43,8 +46,8 @@
 <!-- ng module form pop up -->
 <ng-template class="form-container" #modalData let-modal>
     <div class="modal-header">
-        <button type="button" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
+        <button class="btn-close" type="button" (click)="modal.dismiss('Cross click')">
+            <!-- <span aria-hidden="true">×</span> -->
         </button>
     </div>
     <div class="modal-body">
@@ -72,8 +75,8 @@
     <ng-template class="form-container" #modalData2 let-modal>
         <div class="modal-header">
             <p class="mybag">My Bag</p>
-            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                <span aria-hidden="true">×</span>
+            <button class="btn-close" type="button" (click)="modal.dismiss('Cross click')">
+                <!-- <span aria-hidden="true">×</span> -->
             </button>
         </div>
         <hr class="mt-4 mb-4">

@@ -233,3 +233,11 @@ input{
     height: 39px;
     cursor: pointer;
 }
+
+.btn-close {
+    background-color: transparent;
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+    border: 0px #333333;
+}
